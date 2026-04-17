@@ -25,3 +25,4 @@ final.mp3
 *.gif
 *.mp4
 *.wav
+gradio_server*.log

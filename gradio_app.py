@@ -233,6 +233,7 @@ def chat_callback(message, chat_history, session_state):
     """Handle real-time chat with the doctor."""
     if not message or not message.strip():
         return chat_history, session_state
+    chat_history = chat_history or []
     
     if not session_state or not session_state.get("initial_assessment"):
         # No initial assessment yet, ask user to submit first
@@ -495,6 +496,7 @@ with gr.Blocks(title="AI Doctor with Vision and Voice") as iface:
                         label="Real-Time Doctor Consultation",
                         height=500,
                         show_label=True,
+                        type="messages",
                     )
                     chat_input = gr.Textbox(
                         label="Type your question here",
