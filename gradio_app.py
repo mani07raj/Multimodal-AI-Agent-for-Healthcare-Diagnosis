@@ -577,7 +577,18 @@ with gr.Blocks(title="AI Doctor with Vision and Voice") as iface:
         outputs=[main_tabs, history_patient_id, history_display],
     )
 
-iface.launch(debug=True)
+def launch_app(server_name="127.0.0.1", server_port=7860, debug=True):
+    iface.launch(
+        debug=debug,
+        show_error=True,
+        server_name=server_name,
+        server_port=server_port,
+        max_threads=10,
+    )
+
+
+if __name__ == "__main__":
+    launch_app()
 
 #http://127.0.0.1:7860
 
