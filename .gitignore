@@ -1,0 +1,27 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+ENV/
+.vscode/
+.idea/
+dist/
+build/
+*.egg-info/
+
+# Generated files
+final.mp3
+*.mp3
+*.db
+*.webp
+*.jpg
+*.png
+*.jpeg
+*.gif
+*.mp4
+*.wav
