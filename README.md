@@ -1,3 +1,14 @@
+---
+title: Multimodal AI Agent for Healthcare Diagnosis
+emoji: 🏥
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: 5.12.0
+app_file: app.py
+pinned: false
+---
+
 # AI Medical Assistant Project
 
 A simple medical diagnosis app that uses AI to analyze medical images and patient audio descriptions. Built with Python, Gradio, and Groq API.
